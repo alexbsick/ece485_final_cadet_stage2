@@ -462,7 +462,7 @@ begin
     -- Comparator  
     not_equal_flag <= '1' when (ex_mem_reg1_data /= ex_mem_reg2_data)  else '0';
     
-    next_pc <= std_logic_vector(signed(ex_mem_npc) + signed(ex_mem_imm)) when (ex_mem_branch = '1' and ex_mem_alu_result /= x"00000000") else -- branch case
+    next_pc <= std_logic_vector(signed(ex_mem_npc) + signed(ex_mem_imm)) when (ex_mem_branch = '1' and not_equal_flag = '1') else -- branch case
                std_logic_vector(signed(ex_mem_npc) + signed(ex_mem_imm)) when (ex_mem_jump = '1') else  -- jump case
                NPC; -- note: this happens during IF !!! 1st two during MEM
                       
