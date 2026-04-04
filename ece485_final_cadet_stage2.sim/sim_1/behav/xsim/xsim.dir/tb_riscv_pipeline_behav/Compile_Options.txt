@@ -1,1 +1,1 @@
--wto "23d2a221a56f4630805402b1753d3147" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_riscv_pipeline_behav" "xil_defaultlib.tb_riscv_pipeline" -log "elaborate.log" 
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_riscv_pipeline_behav" "xil_defaultlib.tb_riscv_pipeline" -log "elaborate.log" 

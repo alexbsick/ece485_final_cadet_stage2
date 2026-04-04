@@ -1,6 +1,7 @@
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 23d2a221a56f4630805402b1753d3147 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_riscv_pipeline_behav xil_defaultlib.tb_riscv_pipeline -log elaborate.log 
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_riscv_pipeline_behav xil_defaultlib.tb_riscv_pipeline -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
