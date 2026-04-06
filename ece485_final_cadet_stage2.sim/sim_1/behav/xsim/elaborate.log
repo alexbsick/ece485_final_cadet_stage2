@@ -5,22 +5,4 @@ Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.pc_live [pc_live_default]
-Compiling architecture behavioral of entity xil_defaultlib.pipeline_registers [pipeline_registers_default]
-Compiling architecture behavioral of entity xil_defaultlib.instr_mem [instr_mem_default]
-Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
-Compiling architecture behavioral of entity xil_defaultlib.alu_control [alu_control_default]
-Compiling architecture behavioral of entity xil_defaultlib.reg_file [reg_file_default]
-Compiling architecture behavioral of entity xil_defaultlib.immediate_generator [immediate_generator_default]
-Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
-Compiling architecture behavioral of entity xil_defaultlib.data_mem [data_mem_default]
-Compiling architecture behavioral of entity xil_defaultlib.riscv_pipeline [riscv_pipeline_default]
-Compiling architecture behavioral of entity xil_defaultlib.tb_riscv_pipeline
-Built simulation snapshot tb_riscv_pipeline_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

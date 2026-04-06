@@ -35,7 +35,7 @@ entity pipeline_registers is
         id_ex_jump : inout STD_LOGIC;
         id_ex_load_addr : inout STD_LOGIC;
         id_ex_npc : inout STD_LOGIC_VECTOR(31 downto 0);
-        id_ex_alu_result : inout STD_LOGIC_VECTOR(31 downto 0);
+        id_ex_alu_result : in STD_LOGIC_VECTOR(31 downto 0);
         id_ex_alu_op : inout STD_LOGIC_VECTOR(3 downto 0);
         id_ex_imm : inout STD_LOGIC_VECTOR(31 downto 0);
         id_ex_instr : inout STD_LOGIC_VECTOR(31 downto 0);
@@ -102,7 +102,6 @@ begin
             id_ex_jump <= '0';
             id_ex_load_addr <= '0';
             id_ex_npc <= (others => '0');
-            id_ex_alu_result <= (others => '0');
             id_ex_alu_op <= (others => '0');
             id_ex_imm <= (others => '0');
             id_ex_instr <= (others => '0');

@@ -188,7 +188,7 @@ architecture Behavioral of riscv_pipeline is
             id_ex_jump : inout STD_LOGIC;
             id_ex_load_addr : inout STD_LOGIC;
             id_ex_npc : inout STD_LOGIC_VECTOR(31 downto 0);
-            id_ex_alu_result : inout STD_LOGIC_VECTOR(31 downto 0);
+            id_ex_alu_result : in STD_LOGIC_VECTOR(31 downto 0);
             id_ex_alu_op : inout STD_LOGIC_VECTOR(3 downto 0);
             id_ex_imm : inout STD_LOGIC_VECTOR(31 downto 0);
             id_ex_instr : inout STD_LOGIC_VECTOR(31 downto 0);
@@ -399,7 +399,7 @@ begin
 --------------------------------------------------------------------------------
     -- ID units
     -- Register file [used in ID and WB stages]
-    reg_write_chip <= if_id_reg_write;
+    reg_write_chip <= mem_wb_reg_write;
     reg_file_inst: reg_file
         port map (
         clk       => clk,
@@ -475,6 +475,7 @@ begin
     -- MUX to write back to register file
     wb_data <= mem_wb_mem_data when (mem_wb_mem_read = '1') else 
                x"10000000" when (mem_wb_load_addr = '1') else  -- hack for custom load_addr instruction
-               mem_wb_alu_result when (mem_wb_reg_write = '1' and mem_wb_mem_read = '0');      
+               mem_wb_alu_result when (mem_wb_reg_write = '1' and mem_wb_mem_read = '0') else
+               x"00000000";      
    
 end Behavioral;
