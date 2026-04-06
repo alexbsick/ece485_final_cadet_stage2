@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1,372.290 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,602.091 ns"></ZoomEndTime>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="613.801 ns"></ZoomEndTime>
       <Cursor1Time time="1,559.710 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="226"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="71" />
+   <WVObjectSize size="38" />
    <wvobject fp_name="/tb_riscv_pipeline/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -148,6 +148,10 @@
       <obj_property name="ElementShortName">ex_mem_jump</obj_property>
       <obj_property name="ObjectShortName">ex_mem_jump</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_riscv_pipeline/uut/pipe_reg/mem_wb_jump" type="logic">
+      <obj_property name="ElementShortName">mem_wb_jump</obj_property>
+      <obj_property name="ObjectShortName">mem_wb_jump</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_riscv_pipeline/uut/load_addr" type="logic">
       <obj_property name="ElementShortName">load_addr</obj_property>
       <obj_property name="ObjectShortName">load_addr</obj_property>
@@ -182,141 +186,5 @@
       <obj_property name="ElementShortName">display_x10[31:0]</obj_property>
       <obj_property name="ObjectShortName">display_x10[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/if_id_reg1_data" type="array">
-      <obj_property name="ElementShortName">if_id_reg1_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">if_id_reg1_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/id_ex_reg1_data" type="array">
-      <obj_property name="ElementShortName">id_ex_reg1_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">id_ex_reg1_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/ex_mem_reg1_data" type="array">
-      <obj_property name="ElementShortName">ex_mem_reg1_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">ex_mem_reg1_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/mem_wb_reg1_data" type="array">
-      <obj_property name="ElementShortName">mem_wb_reg1_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mem_wb_reg1_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/if_id_reg2_data" type="array">
-      <obj_property name="ElementShortName">if_id_reg2_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">if_id_reg2_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/id_ex_reg2_data" type="array">
-      <obj_property name="ElementShortName">id_ex_reg2_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">id_ex_reg2_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/ex_mem_reg2_data" type="array">
-      <obj_property name="ElementShortName">ex_mem_reg2_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">ex_mem_reg2_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/mem_wb_reg2_data" type="array">
-      <obj_property name="ElementShortName">mem_wb_reg2_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mem_wb_reg2_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/if_id_rs1" type="array">
-      <obj_property name="ElementShortName">if_id_rs1[4:0]</obj_property>
-      <obj_property name="ObjectShortName">if_id_rs1[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/id_ex_rs1" type="array">
-      <obj_property name="ElementShortName">id_ex_rs1[4:0]</obj_property>
-      <obj_property name="ObjectShortName">id_ex_rs1[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/ex_mem_rs1" type="array">
-      <obj_property name="ElementShortName">ex_mem_rs1[4:0]</obj_property>
-      <obj_property name="ObjectShortName">ex_mem_rs1[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/mem_wb_rs1" type="array">
-      <obj_property name="ElementShortName">mem_wb_rs1[4:0]</obj_property>
-      <obj_property name="ObjectShortName">mem_wb_rs1[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/if_id_rs2" type="array">
-      <obj_property name="ElementShortName">if_id_rs2[4:0]</obj_property>
-      <obj_property name="ObjectShortName">if_id_rs2[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/id_ex_rs2" type="array">
-      <obj_property name="ElementShortName">id_ex_rs2[4:0]</obj_property>
-      <obj_property name="ObjectShortName">id_ex_rs2[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/ex_mem_rs2" type="array">
-      <obj_property name="ElementShortName">ex_mem_rs2[4:0]</obj_property>
-      <obj_property name="ObjectShortName">ex_mem_rs2[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/mem_wb_rs2" type="array">
-      <obj_property name="ElementShortName">mem_wb_rs2[4:0]</obj_property>
-      <obj_property name="ObjectShortName">mem_wb_rs2[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/if_id_rd" type="array">
-      <obj_property name="ElementShortName">if_id_rd[4:0]</obj_property>
-      <obj_property name="ObjectShortName">if_id_rd[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/id_ex_rd" type="array">
-      <obj_property name="ElementShortName">id_ex_rd[4:0]</obj_property>
-      <obj_property name="ObjectShortName">id_ex_rd[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/ex_mem_rd" type="array">
-      <obj_property name="ElementShortName">ex_mem_rd[4:0]</obj_property>
-      <obj_property name="ObjectShortName">ex_mem_rd[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/mem_wb_rd" type="array">
-      <obj_property name="ElementShortName">mem_wb_rd[4:0]</obj_property>
-      <obj_property name="ObjectShortName">mem_wb_rd[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/reg1_data" type="array">
-      <obj_property name="ElementShortName">reg1_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">reg1_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/reg2_data" type="array">
-      <obj_property name="ElementShortName">reg2_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">reg2_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/alu_input_a" type="array">
-      <obj_property name="ElementShortName">alu_input_a[31:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_input_a[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/alu_input_b" type="array">
-      <obj_property name="ElementShortName">alu_input_b[31:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_input_b[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/alu_result" type="array">
-      <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/wb_data" type="array">
-      <obj_property name="ElementShortName">wb_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">wb_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/pipe_reg/if_id_reg_write" type="logic">
-      <obj_property name="ElementShortName">if_id_reg_write</obj_property>
-      <obj_property name="ObjectShortName">if_id_reg_write</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/pipe_reg/id_ex_reg_write" type="logic">
-      <obj_property name="ElementShortName">id_ex_reg_write</obj_property>
-      <obj_property name="ObjectShortName">id_ex_reg_write</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/pipe_reg/ex_mem_reg_write" type="logic">
-      <obj_property name="ElementShortName">ex_mem_reg_write</obj_property>
-      <obj_property name="ObjectShortName">ex_mem_reg_write</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/pipe_reg/mem_wb_reg_write" type="logic">
-      <obj_property name="ElementShortName">mem_wb_reg_write</obj_property>
-      <obj_property name="ObjectShortName">mem_wb_reg_write</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/reg_write" type="logic">
-      <obj_property name="ElementShortName">reg_write</obj_property>
-      <obj_property name="ObjectShortName">reg_write</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/reg_write_chip" type="logic">
-      <obj_property name="ElementShortName">reg_write_chip</obj_property>
-      <obj_property name="ObjectShortName">reg_write_chip</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/reg_file_inst/data_in" type="array">
-      <obj_property name="ElementShortName">data_in[31:0]</obj_property>
-      <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_riscv_pipeline/uut/pipe_reg/mem_wb_jump" type="logic">
-      <obj_property name="ElementShortName">mem_wb_jump</obj_property>
-      <obj_property name="ObjectShortName">mem_wb_jump</obj_property>
    </wvobject>
 </wave_config>
