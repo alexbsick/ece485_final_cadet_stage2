@@ -44,22 +44,27 @@ architecture Behavioral of instr_mem is
         2 => x"00000000", -- 3x Stalls
         3 => x"00000000",
         4 => x"00000000",
-        5 => x"00032383", -- lw x7, 0(x6)           
+--        2 => x"00032383",
+        5 => x"00032383", -- lw x7, 0(x6) 
+--        3 => x"00430313",          
         6 => x"00430313", -- loop: addi x6, x6, 4  
         7 => x"00000000", -- 3x Stalls
         8 => x"00000000",
-        9 => x"00000000",         
+        9 => x"00000000",        
+--        4 => x"00032503", 
         10 => x"00032503",--       lw x10, 0(x6) 
         11 => x"00000000",-- 3x Stalls
         12 => x"00000000",
-        13 => x"00000000",           
+        13 => x"00000000",
+--        5 => x"007503B3",           
         14 => x"007503B3",--       add x7, x10, x7 
+--        6 => x"00129293",
         15 => x"00129293",--       subi x5, x5, 1 (or   addi x5, x5, -1) 
         16 => x"00000000",-- 4x Stalls
         17 => x"00000000",
         18 => x"00000000",
-        19 => x"00000000", 
-        20 => x"F00298E3",--       bne x5, x0, loop   [jump needs to be -60]
+--        7 => x"FA0298E3",
+        19 => x"F20290E3",--       bne x5, x0, loop   [jump needs to be -60]
         -- <imm[11]><imm[9:4]><5 bit rs2><5 bit rs1><3 bit funct3><imm[3:1]><unused bit><imm[10]><7 bit opcode>
         -- imm: -112/2 = -56 => 111110010000
         -- imm: -120/2 = -60 => 111110001000 
@@ -67,8 +72,10 @@ architecture Behavioral of instr_mem is
         -- Ver2: 1 111000 00000 00101 001 100 0 1 1100011
         -- Ver1: F 2 0 2 9 0 E 3
         -- Ver2: F 0 0 2 9 8 E 3 
-        21 => x"00000000",-- 2x Stalls because it will only go 2 stalls once the BNE instruction is loaded
+        20 => x"00000000",-- 2x Stalls because it will only go 2 stalls once the BNE instruction is loaded
+        21 => x"00000000",
         22 => x"00000000",
+--        8 => x"FF9FF06F",
         23 => x"FF9FF06F",-- done: j done            [-4; note: assumes PC is already incremented by 4]
         others => (others => '0')
     );
